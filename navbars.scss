@@ -1,0 +1,91 @@
+/*navbar settings*/
+
+.container {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width:100%;
+    max-width:100%!important;
+    height: 217px;
+    margin:0 auto!important;
+    align-items: center;
+    padding:0 78px!important;
+}
+ .m-logo {
+  height: 128px;
+  img{
+      width:131px;
+      height: 24px;
+  }
+}
+#lang {
+    height: 119px;
+    font-size:32px;
+    color:$grey;
+  }
+
+/* Logo settings */
+
+.logo {
+    display:flex; 
+    position: absolute;
+    justify-content: center;
+    align-self: auto;
+    width:100%;
+    max-width:auto;
+    margin:65px auto;
+}
+.diamond {
+    transform: rotate(60deg); 
+    display:flex;
+    justify-content: center;
+    width:100px;
+    height: 88px;
+    margin:0 -25px;
+}
+.dia {
+    background:white;
+    width:32px;
+    height:auto;
+    max-width:100%; 
+    transform:skew(30deg);
+    margin:0;
+}
+.diamond-small {
+    transform: rotate(-60deg); 
+    display:flex;
+    justify-content: center;
+    width:100px;
+    height: 45px;
+    margin:40px -30px;
+}
+.dia-small {
+    background:white;
+    width:32px;
+    height:auto;
+    max-width:100%; 
+    transform:skew(-30deg);
+    margin:0;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        position: relative;
+        padding:0 15px!important;
+        img {
+            width:64px;
+            height: 12px;
+        }
+        #lang {
+            font-size:16px;
+        }
+    }
+   
+}
+@media screen and (max-width:600px) {
+    .logo {
+        display: flex;
+        margin:20px auto;
+        position: relative;
+    }
+}
