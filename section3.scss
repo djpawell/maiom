@@ -1,0 +1,28 @@
+/* Photo slide */
+
+.carousel-item {
+  img {
+    margin:0 auto;
+  }
+}
+.space3 {
+  height: 239px;
+  width: 100%;
+  max-width: 100%;
+}
+@media screen and (max-width:600px) {
+  #slider {
+    max-width: 375px;
+    width:100%;
+    margin:0 auto;
+  }
+  .carousel-inner {
+    img {
+      width:320px;
+      height: 204px;
+    }
+  }
+  .mini-logo {
+    display: none;
+  }
+}
