@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    width:100%;
+    max-width:1920px;
+    overflow-y: scroll;
+}
+body {
+    max-width: 1920px;
+    height: 5625px;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background:black;
+    h1, h2, h3, p {
+        margin-bottom: 0px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+}
+                            @media screen and (max-width:600px) {
+                                body  {
+                                    max-width: 375px; 
+                                    width: 100%;
+                                    height: 3565px;
+                                }
+                            }
+@import "color";
+@import "navbars";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "footer";
