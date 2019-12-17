@@ -7,12 +7,11 @@
 html {
   width: 100%;
   max-width: 1920px;
-  overflow-y: scroll; }
+  overflow-x: hidden; }
 
 body {
   max-width: 1920px;
   height: 5625px;
-  position: absolute;
   overflow-x: hidden;
   overflow-y: hidden;
   background: black; }
@@ -21,10 +20,14 @@ body {
     font-family: 'Montserrat', sans-serif; }
 
 @media screen and (max-width: 600px) {
+  html {
+    width: 100%;
+    overflow-x: hidden; }
   body {
     max-width: 375px;
     width: 100%;
-    height: 3565px; } }
+    height: 3565px;
+    overflow-x: hidden; } }
 
 /*navbar settings*/
 .container {
@@ -138,7 +141,7 @@ body {
 
 .space {
   width: 100%;
-  height: 717px;
+  height: 587px;
   max-width: 100%; }
 
 .section {
@@ -295,7 +298,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
   .photo-first #text-section2 {
-    padding-top: 170px;
+    padding-top: 90px;
     height: 275px;
     color: #828282;
     font-size: 36px;
@@ -438,7 +441,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 912px;
-  width: 1614px;
+  width: 100%;
+  max-width: 1614px;
   margin: 0 auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -521,7 +525,12 @@ body {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
+  width: 100%;
+  max-width: 1764px;
   height: 1294px;
   opacity: 0.05;
   z-index: 1; }
@@ -530,7 +539,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1764px;
   height: 1107px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -546,6 +554,7 @@ body {
   -ms-flex-align: end;
   align-items: flex-end;
   width: 290px;
+  margin-left: 100px;
   padding-bottom: 100px; }
 
 .parale1 {
@@ -617,15 +626,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 412px;
+  width: 212px;
   height: 317px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 70px; }
+  justify-content: center; }
 
 #parallelogram-mob {
-  width: 120px;
+  width: 100px;
   height: 260px;
   background: white;
   -webkit-transform: skew(35deg);
@@ -634,8 +642,6 @@ body {
   -ms-transform: skew(35deg);
   transform: skew(35deg);
   z-index: -1;
-  margin-top: 200px;
-  margin-left: 100px;
   margin-bottom: 50px; }
 
 .parale-mob {
@@ -649,7 +655,7 @@ body {
   transform: rotate(65deg); }
 
 #triangle_left-mob {
-  width: 110px;
+  width: 90px;
   height: 130px;
   background: white;
   -webkit-transform: skew(30deg);
@@ -677,7 +683,8 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   height: 277px;
-  width: 65px; }
+  width: 45px;
+  margin-left: 130px; }
 
 .case-parale-mob {
   display: -webkit-box;
@@ -686,16 +693,8 @@ body {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  width: 65px; }
-
-.case-parale-mob {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  width: 170px; }
+  width: 75px;
+  margin-left: 50px; }
 
 .photo-last {
   display: -webkit-box;
@@ -705,7 +704,8 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  width: 1920px; }
+  width: 100%;
+  max-width: 1920px; }
   .photo-last img {
     margin: 0 18px; }
 
@@ -780,21 +780,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: absolute;
+    max-width: 375px;
     height: 612px; }
   .mob {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     max-width: 375px;
     width: 100%;
-    margin: 0 auto; } }
+    margin-left: 30px; } }
 
 @media screen and (min-width: 600px) {
   .mob {
@@ -807,7 +804,8 @@ body {
   max-width: 100%; }
 
 .footer {
-  width: 1764px;
+  width: 100%;
+  max-width: 1764px;
   height: 270px;
   margin: 0 auto; }
 
