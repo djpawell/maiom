@@ -5,14 +5,13 @@
 }
 html {
     width:100%;
-    max-width:1920px;
-    overflow-x: hidden;
+    max-width:auto;
+    overflow-x:hidden;
 }
 body {
-    max-width: 1920px;
+    overflow-x:hidden;
+    max-width: auto;
     height: 5625px;
-    overflow-x: hidden;
-    overflow-y: hidden;
     background:black;
     h1, h2, h3, p {
         margin-bottom: 0px;
