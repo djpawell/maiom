@@ -17,6 +17,9 @@
     justify-content: space-between;
    #link {
        z-index: 1;
+       img {
+           opacity: 0.5;
+       }
    }
 }
 .last-logo {
